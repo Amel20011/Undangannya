@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Irwan & Marnianti Wedding Invitation</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- CANVAS PARTICLE -->
+<canvas id="particles"></canvas>
+
+<!-- FLOWER EFFECT -->
+<div class="flower-container"></div>
+
+<!-- COVER -->
+<section class="cover active" id="cover">
+
+    <div class="ornament ornament-top"></div>
+    <div class="ornament ornament-bottom"></div>
+
+    <p class="cover-top">
+        – TAMU UNDANGAN –
+    </p>
+
+    <h1 class="cover-title">
+        THE WEDDING OF
+    </h1>
+
+    <h2 class="cover-name">
+        Irwan & Marnianti
+    </h2>
+
+    <div class="cover-photo glass reveal">
+
+        <img
+            src="images/foto-cover.jpg"
+            alt="Wedding Cover">
+
+    </div>
+
+    <div class="guest-name">
+        <p>Kepada Yth.</p>
+
+        <h3 id="guestName">
+            Bapak/Ibu/Saudara/i
+        </h3>
+    </div>
+
+    <p class="cover-desc">
+        Dengan memohon rahmat dan ridha Allah SWT,
+        kami mengundang Bapak/Ibu/Saudara/i untuk hadir
+        dalam acara pernikahan putra kami.
+    </p>
+
+    <button id="openInvitation" class="open-btn">
+        Buka Undangan
+    </button>
+
+</section>
+
+
+<!-- MAIN CONTENT -->
+<main id="mainContent">
+
+<!-- HERO -->
+<section class="hero section-dark reveal">
+
+    <div class="hero-content">
+
+        <h1>
+            Irwan & Marnianti
+        </h1>
+
+        <p>
+            Ahad, 5 Juli 2026
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- MEMPELAI -->
+<section class="couple section-light reveal">
+
+    <h2>
+        Kami Yang Berbahagia
+    </h2>
+
+    <div class="couple-grid">
+
+        <div class="person-card">
+
+            <h3>Irwan</h3>
+
+            <p>Mempelai Pria</p>
+
+            <span>
+                Putra pertama dari<br>
+                Bapak Roi & Ibu Dama
+            </span>
+
+        </div>
+
+        <div class="couple-symbol">
+            ~
+        </div>
+
+        <div class="person-card">
+
+            <h3>Marnianti</h3>
+
+            <p>Mempelai Wanita</p>
+
+            <span>
+                Putri dari<br>
+                Bapak Jumarrang & Ibu Jumarni
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOTO KELUARGA -->
+<section class="family section-light reveal">
+
+    <h2>
+        Keluarga Mempelai Pria
+    </h2>
+
+    <div class="family-photo glass">
+
+        <img
+            src="images/orangtua.jpg"
+            id="familyImage"
+            alt="Orang Tua">
+
+    </div>
+
+    <p class="caption">
+        Bapak Roi & Ibu Dama —
+        Orang Tua Mempelai Pria
+    </p>
+
+</section>
+
+
+<!-- COUNTDOWN -->
+<section class="countdown section-dark reveal">
+
+    <h2>
+        Menuju Hari Bahagia
+    </h2>
+
+    <div class="count-grid">
+
+        <div class="count-card">
+            <span id="days">00</span>
+            <p>Hari</p>
+        </div>
+
+        <div class="count-card">
+            <span id="hours">00</span>
+            <p>Jam</p>
+        </div>
+
+        <div class="count-card">
+            <span id="minutes">00</span>
+            <p>Menit</p>
+        </div>
+
+        <div class="count-card">
+            <span id="seconds">00</span>
+            <p>Detik</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- INFORMASI -->
+<section class="event-info section-light reveal">
+
+    <h2>
+        Informasi Acara
+    </h2>
+
+    <div class="event-card glass">
+
+        <div class="event-icon">
+            💍
+        </div>
+
+        <h3>Akad Nikah</h3>
+
+        <p>
+            Ahad, 5 Juli 2026
+        </p>
+
+        <p>
+            10.00 - selesai
+        </p>
+
+        <p>
+            Desa Batulappa,
+            Dusun Patiorang,
+            Kabupaten Pinrang
+        </p>
+
+        <a
+        href="https://maps.google.com"
+        target="_blank"
+        class="location-btn">
+
+            Lihat Lokasi
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- KISAH CINTA -->
+<section class="story section-dark reveal">
+
+    <h2>
+        Kisah Cinta
+    </h2>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+
+            <div class="dot"></div>
+
+            <h3>
+                Awal Bertemu
+            </h3>
+
+            <p>
+                Pertemuan Pertama
+            </p>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <div class="dot"></div>
+
+            <h3>
+                Menjalin Hubungan
+            </h3>
+
+            <p>
+                Bersama Dalam Suka & Duka
+            </p>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <div class="dot"></div>
+
+            <h3>
+                Lamaran
+            </h3>
+
+            <p>
+                Ikrar & Janji
+            </p>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <div class="dot"></div>
+
+            <h3>
+                5 Juli 2026
+            </h3>
+
+            <p>
+                Hari Paling Bahagia
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- RSVP -->
+<section class="rsvp section-light reveal">
+
+    <h2>RSVP</h2>
+
+    <form id="rsvpForm">
+
+        <input
+        type="text"
+        id="rsvpName"
+        placeholder="Nama Lengkap"
+        required>
+
+        <div class="attendance">
+
+            <button
+            type="button"
+            class="toggle active"
+            data-status="Hadir">
+
+                Hadir
+
+            </button>
+
+            <button
+            type="button"
+            class="toggle"
+            data-status="Tidak Hadir">
+
+                Tidak Hadir
+
+            </button>
+
+        </div>
+
+        <textarea
+        id="message"
+        rows="4"
+        placeholder="Ucapan & Doa"
+        required></textarea>
+
+        <button
+        type="submit"
+        class="submit-btn">
+
+            Kirim
+
+        </button>
+
+    </form>
+
+</section>
+
+
+<!-- UCAPAN -->
+<section class="wishes reveal">
+
+    <h2>
+        Ucapan & Doa
+    </h2>
+
+    <div id="wishList">
+
+    </div>
+
+</section>
+
+
+<!-- PENUTUP -->
+<section class="closing section-dark reveal">
+
+    <p>
+        Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila
+        Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kami.
+    </p>
+
+    <h3>
+        Kami yang berbahagia
+    </h3>
+
+    <h2>
+        Irwan & Marnianti
+    </h2>
+
+    <p>
+        Wassalamu'alaikum Warahmatullahi Wabarakatuh
+    </p>
+
+</section>
+
+</main>
+
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+
+    <span id="closeLightbox">
+        ×
+    </span>
+
+    <img
+    src=""
+    id="lightboxImage">
+
+</div>
+
+
+<!-- MUSIC -->
+<button class="music-btn" id="musicBtn">
+    ♪
+</button>
+
+<audio
+id="bgMusic"
+loop>
+
+    <source
+    src="music/music.mp3"
+    type="audio/mpeg">
+
+</audio>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
